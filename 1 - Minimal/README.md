@@ -4,7 +4,7 @@ Let's start with a minimal project. An application with a single window, contain
 
 ![](../Screenshots/1.png)
 
-Our C# code will be places in `src`. It's important to keep the code in subfolder because later we will have some other files and another folder for extra data.
+Our C# code will be placed in `src`. It's important to keep the code in subfolder because later we will have some other files and another folder for extra data.
 
 Even with a minimal project, there is a couple of things in the code worth looking into.
 

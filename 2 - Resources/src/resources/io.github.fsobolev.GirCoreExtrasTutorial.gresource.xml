@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gresources>
+    <gresource prefix="/io/github/fsobolev/GirCoreExtrasTutorial">
+        <file alias="style.css">light.css</file>
+        <file alias="style-dark.css">dark.css</file>
+    </gresource>
+    <gresource prefix="/io/github/fsobolev/GirCoreExtrasTutorial/icons/scalable/status/">
+        <file preprocess="xml-stripblanks">heart-filled-symbolic.svg</file>
+    </gresource>
+</gresources>

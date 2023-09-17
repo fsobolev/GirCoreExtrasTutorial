@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net7.0</TargetFramework>
+    <RootNamespace>Tutorial</RootNamespace>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="GirCore.Adw-1" Version="0.4.0" />
+  </ItemGroup>
+  
+  <Target Name="PreBuild" BeforeTargets="PreBuildEvent">
+    <Exec Command="glib-compile-resources --sourcedir ./resources ./resources/io.github.fsobolev.GirCoreExtrasTutorial.gresource.xml --target=$(OutDir)/io.github.fsobolev.GirCoreExtrasTutorial.gresource" />
+  </Target>
+
+  <Target Name="PostPublish" AfterTargets="Publish">
+    <Exec Command="cp $(OutDir)/io.github.fsobolev.GirCoreExtrasTutorial.gresource $(PublishDir)/io.github.fsobolev.GirCoreExtrasTutorial.gresource" />
+  </Target>
+
+</Project>

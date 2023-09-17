@@ -1,6 +1,6 @@
 # Minimal project
 
-Let's start with a minimal project. An application with a single window, containing headerbar, a button to change application style (light/dark), an icon and a label. In the following parts of the tutorial we will slightly change the app.
+Let's start with a minimal project. An application with a single window, containing headerbar, a button to change application's style (light/dark), an icon and a label. In the following parts of the tutorial we will slightly change the app.
 
 ![](../Screenshots/1.png)
 
@@ -18,7 +18,7 @@ The first argument here is your application's ID. The ID will be used in some ot
 
 You can read more about applications IDs at [Flatpak site](https://docs.flatpak.org/en/latest/conventions.html#application-ids) and in [Appstream specification docs](https://www.freedesktop.org/software/appstream/docs/chap-Metadata.html#tag-id-generic).
 
-## Synchromization context
+## Synchronization context
 
 ```csharp
 _application.RunWithSynchronizationContext();

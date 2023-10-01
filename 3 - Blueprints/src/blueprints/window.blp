@@ -1,0 +1,38 @@
+using Gtk 4.0;
+using Adw 1;
+
+Adw.ApplicationWindow _root {
+    default-width: 400;
+    default-height: 300;
+    
+    Gtk.Box {
+        orientation: vertical;
+        
+        Adw.HeaderBar {
+            [start]
+            Gtk.Button _changeStyleButton {
+                label: "Change Style";
+            }
+        }
+    
+        Gtk.Box {
+            spacing: 12;
+            halign: center;
+            valign: center;
+            vexpand: true;
+            
+            Gtk.Image {
+                icon-name: "heart-filled-symbolic";
+                icon-size: large;
+                
+                styles ["main-icon"]
+            }
+        
+            Gtk.Label {
+                label: "gir.core";
+                
+                styles ["title-1"]
+            }
+        }
+    }
+}
